@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Ldscr by MrKuBu (edit by Alexey)</title>
+		<link rel="stylesheet" href="style.css"> 
+	</head>
+
+	<body>
+		<main class="container">
+			<div class="content">
+				<img src="intermission.png" alt="Вжух">
+				<h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+					<span id="remain">1</span>/<span id="total">1</span> файлов загружено.
+				</h1>
+			</div>
+			<br>
+			<audio autoplay>
+				<source src="intermission_music.mp3" type="audio/mpeg">
+			</audio>
+		</main>
+
+		<script>
+			window.GameDetails = function (servername, serverurl, mapname, maxplayers, steamid, gamemode) {
+				window.mapname.innerHTML = mapname
+			}
+
+			window.SetFilesTotal = function (total) {
+				window.total.innerHTML = total
+			}
+
+			window.SetFilesNeeded = function (needed) {
+				window.remain.innerHTML = needed
+			}
+		</script>
+	</body>
+</html>
